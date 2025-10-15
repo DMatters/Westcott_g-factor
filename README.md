@@ -1,3 +1,3 @@
 Westcott_g-factor
 
-Python package for calculating Westcott g-factors, which adjust thermal-neutron capture cross sections for non-1/v behavior at low energies. These are important adjustments in Neutron Activation Analysis (NAA) and Prompt Gamma-ray Activation Analysis (PGAA) when measuring nuclei that have low-energy resonances in their cross sections. Code calculates g-factors for Maxwellian neutron energy distributions and individual neutron source spectra, when available.
+Python package for calculating Westcott g-factors, which adjust thermal-neutron capture cross sections for non-1/v behavior at low energies. These are important in Neutron Activation Analysis (NAA) and Prompt Gamma-ray Activation Analysis (PGAA) when measuring nuclei that have low-energy resonances in their cross sections. Code calculates g-factors for Maxwellian neutron energy distributions and individual neutron source spectra, when available.
