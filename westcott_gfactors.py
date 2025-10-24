@@ -159,8 +159,8 @@ if __name__ == '__main__':
         # Evaluate g-factor (Maxwellian distribution, 140 K)
         print("Maxwellian distribution, T=140 K: g_w = {0:.3f}".format(gw_Maxwellian(140, sigma_x, sigma_y)))
 
-        # Evaluate g-factor (BRR cold spectrum, 2015)
-        En_BRR_cold, dndE_BRR_cold = import_spectrum('/Users/davidmatters/westcott/spectra/csv/bnc_cold_spectrum_2015.csv')
+        # Evaluate g-factor (BRR cold spectrum, 2012)
+        En_BRR_cold, dndE_BRR_cold = import_spectrum('/Users/davidmatters/westcott/spectra/csv/bnc_cold_spectrum_2012.csv')
         print("BRR cold-neutron spectrum (140 K): g_w = {0:.3f}".format(gw_arbitrary(En_BRR_cold, dndE_BRR_cold, sigma_x, sigma_y)))
 
         # Evaluate g-factor (Maxwellian distribution, 21 K)
@@ -201,7 +201,7 @@ if __name__ == '__main__':
         # Evaluate g-factor using irregularity method (Maxwellian distribution, 293 K)
         print("Irregularity method, Maxwellian distribution w/T=293 K: g_w = {0:.3f}".format(gw_irregularity(Er_test, Gamma_test, np.linspace(1,100000,100000), phi_Maxwellian(293,np.linspace(1,100000,100000)), 293)))
 
-        # Evaluate g-factor using irregularity method (BRR cold spectrum, 2015)
+        # Evaluate g-factor using irregularity method (BRR cold spectrum, 2012)
         print("Irregularity method, BRR cold-neutron spectrum (140 K): g_w = {0:.3f}".format(gw_irregularity(Er_test, Gamma_test, vel(En_BRR_cold), dndE_BRR_cold)))
 
         # Evaluate g-factor using irregularity method (BRR thermal spectrum, 2002)
